@@ -1,0 +1,63 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(../img/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    header {
+        max-width: 85%;
+        margin: 0 auto;
+        text-align: center;
+        @media (max-width: 767px) {
+            font-size: calc(10px + (50 + 50 * 0.3) * ((100vw - 320px) / 1920));
+        }
+        h1 {
+            font-size: 4em;
+        }
+        h2 {
+            font-size: 2em;
+        }
+    }
+    main {
+        max-width: 85%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        @media (max-width: 767px) {
+            font-size: calc(8px + (30 + 30 * 0.3) * ((100vw - 320px) / 1920));
+        }
+        section {
+            #app {
+                .solider {
+                    display: flex;
+                    flex-direction: column;
+                    .row {
+                        .activebomb {
+                            background-image: url(../img/bomb.png);
+                            background-size: cover;
+                        }
+                        button {
+                            width: 2.5em;
+                            height: 2.5em;
+                            border-radius: .3em;
+                            font-size: 3em;
+                            margin: 1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        max-width: 85%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.5em;
+        @media (max-width: 767px) {
+            font-size: calc(12px + (30 + 30 * 0.3) * ((100vw - 320px) / 1920));
+        }
+    }
+}
